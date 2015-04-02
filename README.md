@@ -128,12 +128,12 @@ you should consider mounting `/opt/graphite/storage` & `/var/log` on a larger vo
     ```
     sudo docker run -d \
       --name graphite \
-      -v /path/to/ebs/graphite:/opt/graphite/storage \
-      -v /path/to/ebs/log:/var/log \
+      -v /ebs_vol/graphite/storage:/opt/graphite/storage \
+      -v /ebs_vol/log:/var/log \
       -p 80:80 \
       -p 2003:2003 \
       -p 8125:8125/udp \
-      hopsoft/graphite-statsd
+      gengmao/graphite-statsd
     ```
 
 ## Additional Reading
