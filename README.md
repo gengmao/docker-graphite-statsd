@@ -1,7 +1,7 @@
-[![Docker Hub](http://img.shields.io/badge/docker-view-brightgreen.svg?style=flat)](https://registry.hub.docker.com/u/hopsoft/graphite-statsd/)
-[![Gratipay](http://img.shields.io/badge/gratipay-contribute-009bef.svg?style=flat)](https://gratipay.com/hopsoft/)
+[![Docker Hub](http://img.shields.io/badge/docker-view-brightgreen.svg?style=flat)](https://registry.hub.docker.com/u/gengmao/graphite-statsd/)
 
-# Docker Image for Graphite & Statsd
+# Docker Image for Graphite & Statsd 
+This is forked from https://github.com/hopsoft/docker-graphite-statsd, and with https://github.com/hopsoft/docker-graphite-statsd/pull/27 merged.   
 
 ## Get Graphite & Statsd running instantly
 
@@ -16,7 +16,7 @@ sudo docker run -d \
   -p 80:80 \
   -p 2003:2003 \
   -p 8125:8125/udp \
-  hopsoft/graphite-statsd
+  gengmao/graphite-statsd
 ```
 
 This starts a Docker container named: **graphite**
@@ -149,15 +149,15 @@ Build the image yourself.
 
 ### OSX
 
-1. `git clone https://github.com/hopsoft/docker-graphite-statsd.git`
+1. `git clone https://github.com/gengmao/docker-graphite-statsd.git`
 1. `cd docker-graphite-statsd`
 1. `vagrant up`
 1. `vagrant ssh`
-1. `sudo docker build -t hopsoft/graphite-statsd /vagrant`
+1. `sudo docker build -t gengmao/graphite-statsd /vagrant`
 
-**Note**: Pay attention to the forwarded ports in the [Vagrantfile](https://github.com/hopsoft/docker-graphite-statsd/blob/master/Vagrantfile).
+**Note**: Pay attention to the forwarded ports in the [Vagrantfile](https://github.com/gengmao/docker-graphite-statsd/blob/master/Vagrantfile).
 
 ### Linux
 
-1. `git clone https://github.com/hopsoft/docker-graphite-statsd.git`
-1. `sudo docker build -t hopsoft/graphite-statsd ./docker-graphite-statsd`
+1. `git clone https://github.com/gengmao/docker-graphite-statsd.git`
+1. `sudo docker build -t gengmao/graphite-statsd ./docker-graphite-statsd`
